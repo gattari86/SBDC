@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 4 Steps to Building a Digital Presence | Poppy Marketing & Consulting</title>
+    <meta name="description" content="Learn the 4 essential steps to building a strong digital presence for your small business. Get our Brand Launch Essentials package starting at $950.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-raleway { font-family: 'Raleway', sans-serif; }
+
+        /* Brand Colors */
+        .bg-primary { background-color: #2c5484; }
+        .bg-accent-teal { background-color: #47a3c2; }
+        .bg-purple { background-color: #9f7dff; }
+        .bg-coral { background-color: #ff6b8b; }
+        .bg-turquoise { background-color: #30d1b0; }
+        .bg-dark-purple { background-color: #53498c; }
+        .bg-light-gray { background-color: #f5f7fa; }
+
+        .text-primary { color: #2c5484; }
+        .text-accent-teal { color: #47a3c2; }
+        .text-purple { color: #9f7dff; }
+        .text-coral { color: #ff6b8b; }
+        .text-turquoise { color: #30d1b0; }
+        .text-dark-purple { color: #53498c; }
+
+        /* Brand Gradients */
+        .gradient-primary { background: linear-gradient(135deg, #2c5484 0%, #47a3c2 100%); }
+        .gradient-accent { background: linear-gradient(135deg, #9f7dff 0%, #ff6b8b 100%); }
+        .gradient-teal { background: linear-gradient(135deg, #30d1b0 0%, #47a3c2 100%); }
+
+        /* Hero section height */
+        .hero-height { min-height: 100vh; }
+
+        /* Hero content positioning */
+        .hero-content { padding-top: 80px; }
+
+        @media (min-width: 768px) {
+            .hero-content { padding-top: 100px; }
+        }
+
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+
+        /* Card hover effects */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Custom breakpoints for better mobile optimization */
+        @media (max-width: 640px) {
+            .hero-height { min-height: 90vh; }
+            .mobile-text-center { text-align: center; }
+        }
+
+        /* Step number styling */
+        .step-number {
+            background: linear-gradient(135deg, #2c5484 0%, #47a3c2 100%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-raleway bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-poppins font-semibold text-2xl text-primary">
+                    Poppy
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#steps" class="text-gray-700 hover:text-primary transition-colors">Our Process</a>
+                    <a href="#package" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <i class="ph ph-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-height bg-light-gray relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="assets/images/hero.png" alt="Modern retail store interior" class="w-full h-full object-cover object-top">
+            <div class="absolute inset-0 gradient-primary opacity-80"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div class="max-w-3xl text-white hero-content">
+                <h1 class="font-poppins font-semibold text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">
+                    The 4 Steps to Building a
+                    <span class="text-turquoise">Digital Presence</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+                    Simple, clear strategies that actually work for small businesses.
+                    Let Poppy guide you from idea to professional online presence.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://www.poppymarketingandconsulting.com/booking-calendar/discovery-consultation" target="_blank" class="bg-turquoise hover:bg-opacity-90 text-white px-8 py-4 rounded-full font-medium text-lg transition-all inline-flex items-center justify-center shadow-lg">
+                        <i class="ph ph-calendar-blank mr-2"></i>
+                        Book Free Consultation
+                    </a>
+                    <a href="#steps" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-full font-medium text-lg transition-all inline-flex items-center justify-center">
+                        <i class="ph ph-arrow-down mr-2"></i>
+                        Learn Our Process
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="ph ph-caret-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-poppins font-semibold text-3xl md:text-4xl text-gray-900 mb-6">
+                Building a strong digital presence doesn't have to feel overwhelming
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                At Poppy Marketing & Consulting, we believe small businesses deserve simple, clear strategies that actually work.
+                Here's the framework we guide our clients through — and how our Brand Launch Essentials package can set you up for success from day one.
+            </p>
+        </div>
+    </section>
+
+    <!-- 4 Steps Section -->
+    <section id="steps" class="py-16 md:py-24 bg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-semibold text-3xl md:text-4xl text-gray-800 mb-4">
+                    Our 4-Step Framework
+                </h2>
+                <p class="text-lg text-gray-600">
+                    The proven process we use to build successful digital presences
+                </p>
+            </div>
+
+            <!-- Step 1: Foundation -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="order-2 lg:order-1">
+                    <div class="step-number">1</div>
+                    <h3 class="font-poppins font-semibold text-2xl md:text-3xl text-gray-800 mb-4">
+                        <i class="ph ph-house text-primary mr-3"></i>
+                        FOUNDATION – Your Website
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Your website is your digital home base. It's the first impression customers get, and it needs to work as hard as you do.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Keep it clear</h4>
+                                <p class="text-gray-600">Who you are, what you do, and how to reach you.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Make it professional but easy to manage</h4>
+                                <p class="text-gray-600">You shouldn't need a developer every time you want to update your hours.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Think mobile-first</h4>
+                                <p class="text-gray-600">More than half of online searches come from phones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-purple to-coral p-6 rounded-xl">
+                        <h5 class="font-poppins font-semibold text-lg mb-2" style="color: #47a3c2;">
+                            <i class="ph ph-lightbulb mr-2"></i>
+                            How Poppy helps:
+                        </h5>
+                        <p style="color: #47a3c2;">
+                            Our Brand Launch Essentials includes a custom one-page professional website designed for your brand and industry.
+                            It's mobile-responsive, SEO-friendly, and built for easy content management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl">
+                        <i class="ph ph-desktop text-6xl text-primary mb-6"></i>
+                        <h4 class="font-poppins font-semibold text-xl mb-4">Professional Website Features</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-device-mobile text-turquoise mr-3"></i>
+                                Mobile-responsive design
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-magnifying-glass text-turquoise mr-3"></i>
+                                SEO-friendly structure
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-gear text-turquoise mr-3"></i>
+                                Easy content management
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-navigation text-turquoise mr-3"></i>
+                                Intuitive navigation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Visibility -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <i class="ph ph-eye text-6xl text-accent-teal mb-6"></i>
+                    <h4 class="font-poppins font-semibold text-xl mb-4">SEO Best Practices</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-map-pin text-coral mr-3"></i>
+                            Local search optimization
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-key text-coral mr-3"></i>
+                            Customer-friendly keywords
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-star text-coral mr-3"></i>
+                            Reviews and credibility building
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-trend-up text-coral mr-3"></i>
+                            Regular content updates
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="step-number">2</div>
+                    <h3 class="font-poppins font-semibold text-2xl md:text-3xl text-gray-800 mb-4">
+                        <i class="ph ph-magnifying-glass text-accent-teal mr-3"></i>
+                        VISIBILITY – SEO
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        If no one can find you, your website is just an expensive digital flyer. SEO ensures you're discoverable when people are searching for what you offer.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-coral text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Focus on local search</h4>
+                                <p class="text-gray-600">Claim your Google Business Profile and keep info consistent everywhere.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-coral text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Use customer-friendly keywords</h4>
+                                <p class="text-gray-600">Think "Houston hair salon" not "specialized beauty solutions."</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-coral text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Build credibility</h4>
+                                <p class="text-gray-600">Reviews, blogs, and regular updates improve ranking.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-accent-teal to-turquoise p-6 rounded-xl">
+                        <h5 class="font-poppins font-semibold text-lg mb-2" style="color: #47a3c2;">
+                            <i class="ph ph-lightbulb mr-2"></i>
+                            How Poppy helps:
+                        </h5>
+                        <p style="color: #47a3c2;">
+                            Our setup includes SEO-friendly design from day one, so your website is optimized for visibility right out of the gate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Community -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="order-2 lg:order-1">
+                    <div class="step-number">3</div>
+                    <h3 class="font-poppins font-semibold text-2xl md:text-3xl text-gray-800 mb-4">
+                        <i class="ph ph-users text-purple mr-3"></i>
+                        COMMUNITY – Social Media
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Social media isn't about shouting offers into the void, it's about connection. Think of it as your neighborhood coffee shop.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-purple text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Pick platforms where your people are</h4>
+                                <p class="text-gray-600">Focus your energy where your customers spend their time.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-purple text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Share content that educates, entertains, or solves a problem</h4>
+                                <p class="text-gray-600">Provide value first, sales will follow.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-purple text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Build relationships, not just sales</h4>
+                                <p class="text-gray-600">Authentic connections drive long-term success.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-purple to-dark-purple p-6 rounded-xl">
+                        <h5 class="font-poppins font-semibold text-lg mb-2" style="color: #47a3c2;">
+                            <i class="ph ph-lightbulb mr-2"></i>
+                            How Poppy helps:
+                        </h5>
+                        <p style="color: #47a3c2;">
+                            With your website and logo in place, you can finally move beyond "just Instagram" and establish a full online presence.
+                            Our package is perfect for businesses making that social media to web transition.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl">
+                        <i class="ph ph-share-network text-6xl text-purple mb-6"></i>
+                        <h4 class="font-poppins font-semibold text-xl mb-4">Social Media Strategy</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-target text-purple mr-3"></i>
+                                Platform selection
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-article text-purple mr-3"></i>
+                                Content planning
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-heart text-purple mr-3"></i>
+                                Community engagement
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="ph ph-chart-line text-purple mr-3"></i>
+                                Performance tracking
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Authority -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <i class="ph ph-crown text-6xl text-dark-purple mb-6"></i>
+                    <h4 class="font-poppins font-semibold text-xl mb-4">Building Authority</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-article text-dark-purple mr-3"></i>
+                            Blog posts and articles
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-video text-dark-purple mr-3"></i>
+                            Educational content
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-presentation text-dark-purple mr-3"></i>
+                            Speaking opportunities
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="ph ph-calendar text-dark-purple mr-3"></i>
+                            Consistent publishing
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="step-number">4</div>
+                    <h3 class="font-poppins font-semibold text-2xl md:text-3xl text-gray-800 mb-4">
+                        <i class="ph ph-medal text-dark-purple mr-3"></i>
+                        AUTHORITY – Expertise
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Authority isn't built overnight. It's earned through consistency and value.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-dark-purple text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Start small</h4>
+                                <p class="text-gray-600">Answer one customer question in a blog post or video.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-dark-purple text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Grow visibility</h4>
+                                <p class="text-gray-600">Guest articles, workshops, and public speaking all count.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-dark-purple text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Stay consistent</h4>
+                                <p class="text-gray-600">Trust builds over time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-dark-purple to-purple p-6 rounded-xl">
+                        <h5 class="font-poppins font-semibold text-lg mb-2" style="color: #47a3c2;">
+                            <i class="ph ph-lightbulb mr-2"></i>
+                            How Poppy helps:
+                        </h5>
+                        <p style="color: #47a3c2;">
+                            We deliver custom logo design with multiple concepts, unlimited revisions, and all file formats.
+                            Your brand stays consistent across everything you publish — online and offline.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Launch Essentials Package -->
+    <section id="package" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-poppins font-semibold text-3xl md:text-4xl text-gray-800 mb-4">
+                    The Poppy Advantage: Brand Launch Essentials
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
+                    Poppy Marketing & Consulting, in partnership with <strong>Texas Gulf Coast SBDC Network - Fort Bend County SBDC</strong>,
+                    is proud to offer this exclusive Brand Launch Essentials package at a special rate for small business owners.
+                    This complete package gives you everything you need to go from idea to professional presence.
+                </p>
+                <div class="bg-gradient-to-r from-turquoise to-accent-teal rounded-xl p-6 max-w-4xl mx-auto">
+                    <div class="flex items-start justify-center">
+                        <i class="ph ph-handshake text-white text-2xl mr-3 mt-1 flex-shrink-0"></i>
+                        <p class="text-white text-left">
+                            <span class="font-poppins font-semibold">Special Partnership Offer:</span> Through our partnership with Texas Gulf Coast SBDC Network - Fort Bend County SBDC,
+                            we're making professional branding and web presence accessible to all small businesses they serve. Together, we're committed to helping local entrepreneurs succeed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+                <div class="bg-white rounded-2xl p-8 shadow-xl flex flex-col">
+                    <div class="bg-gradient-to-br from-primary to-accent-teal rounded-2xl p-8 md:p-10 flex-grow">
+                    <h3 class="font-poppins font-semibold text-2xl md:text-3xl mb-8" style="color: #47a3c2;">
+                        Complete Brand Launch Package
+                    </h3>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">Custom one-page professional website</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">SEO-friendly setup</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">Mobile-responsive design</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">User-friendly navigation</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">Easy content management</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">Custom logo with multiple concepts</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">Unlimited revisions</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ph ph-check-circle text-turquoise text-xl mr-3 mt-1 flex-shrink-0"></i>
+                            <span style="color: #47a3c2;">Brand consistency built-in</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/20 pt-6 mt-auto">
+                        <div class="text-center">
+                            <div class="text-sm mb-2" style="color: #47a3c2;">Special SBDC Rate</div>
+                            <div class="font-poppins font-semibold text-4xl mb-2" style="color: #47a3c2;">$950</div>
+                            <div class="text-sm line-through" style="color: #47a3c2;">Regular $1,200</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-xl flex flex-col">
+                    <h3 class="font-poppins font-semibold text-2xl md:text-3xl text-gray-800 mb-8">
+                        Who This Package Is Perfect For
+                    </h3>
+
+                    <div class="space-y-6 flex-grow">
+                        <div class="flex items-start">
+                            <div class="bg-turquoise/10 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="ph ph-rocket-launch text-turquoise text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">New Businesses</h4>
+                                <p class="text-gray-600">Starting from scratch and need a polished brand.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-coral/10 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="ph ph-lightning text-coral text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Quick Launch</h4>
+                                <p class="text-gray-600">Need a professional presence fast.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-purple/10 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="ph ph-instagram-logo text-purple text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Social Media Transition</h4>
+                                <p class="text-gray-600">Moving from Instagram-only to a real site.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-accent-teal/10 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="ph ph-briefcase text-accent-teal text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Service Providers</h4>
+                                <p class="text-gray-600">Need a simple, effective landing page.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-dark-purple/10 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="ph ph-piggy-bank text-dark-purple text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Budget-Conscious Startups</h4>
+                                <p class="text-gray-600">Want branding and a website in one package.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-turquoise/10 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="ph ph-medal text-turquoise text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">SBDC Members</h4>
+                                <p class="text-gray-600">Special discounted rate available.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-poppins font-semibold text-3xl md:text-4xl mb-6 text-white">
+                Ready to Launch Your Brand?
+            </h2>
+            <p class="text-xl mb-12 text-gray-200 leading-relaxed">
+                At Poppy Marketing & Consulting, we help you build the foundation, visibility,
+                community, and authority your business needs to grow.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+                <a href="https://www.poppymarketingandconsulting.com/booking-calendar/discovery-consultation" target="_blank" class="bg-white/10 hover:bg-white/20 rounded-xl p-6 transition-all group">
+                    <i class="ph ph-calendar-blank text-3xl text-turquoise mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-poppins font-semibold mb-2 text-white">Book Consultation</h3>
+                    <p class="text-sm text-gray-300">Free 30-minute session</p>
+                </a>
+
+                <a href="https://www.poppymarketingandconsulting.com/" target="_blank" class="bg-white/10 hover:bg-white/20 rounded-xl p-6 transition-all group">
+                    <i class="ph ph-globe text-3xl text-turquoise mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-poppins font-semibold mb-2 text-white">Visit Website</h3>
+                    <p class="text-sm text-gray-300">Learn more about us</p>
+                </a>
+
+                <a href="https://www.poppymarketingandconsulting.com/portfolio" target="_blank" class="bg-white/10 hover:bg-white/20 rounded-xl p-6 transition-all group">
+                    <i class="ph ph-briefcase text-3xl text-turquoise mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-poppins font-semibold mb-2 text-white">View Our Work</h3>
+                    <p class="text-sm text-gray-300">Portfolio showcase</p>
+                </a>
+
+                <a href="mailto:email@poppy-marketing.com" class="bg-white/10 hover:bg-white/20 rounded-xl p-6 transition-all group">
+                    <i class="ph ph-envelope text-3xl text-turquoise mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-poppins font-semibold mb-2 text-white">Email Us</h3>
+                    <p class="text-sm text-gray-300">email@poppy-marketing.com</p>
+                </a>
+
+                <a href="tel:9417774933" class="bg-white/10 hover:bg-white/20 rounded-xl p-6 transition-all group">
+                    <i class="ph ph-phone text-3xl text-turquoise mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-poppins font-semibold mb-2 text-white">Call Us</h3>
+                    <p class="text-sm text-gray-300">(941) 777-4933</p>
+                </a>
+            </div>
+
+            <a href="https://www.poppymarketingandconsulting.com/booking-calendar/discovery-consultation" target="_blank" class="bg-turquoise hover:bg-opacity-90 text-white px-8 py-4 rounded-full font-medium text-lg transition-all inline-flex items-center shadow-lg">
+                <i class="ph ph-calendar-blank mr-2"></i>
+                Book Your Free 30-Minute Consultation Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="font-poppins font-semibold text-2xl text-turquoise mb-4">
+                        Poppy
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Helping small businesses build foundation, visibility, community, and authority through simple, effective digital strategies.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-turquoise transition-colors">Brand Launch Essentials</a></li>
+                        <li><a href="#" class="hover:text-turquoise transition-colors">Website Development</a></li>
+                        <li><a href="#" class="hover:text-turquoise transition-colors">Logo Design</a></li>
+                        <li><a href="#" class="hover:text-turquoise transition-colors">SEO Setup</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="ph ph-envelope mr-2"></i>
+                            email@poppy-marketing.com
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ph ph-phone mr-2"></i>
+                            (941) 777-4933
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ph ph-map-pin mr-2"></i>
+                            Texas, United States
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Poppy Marketing & Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Mobile menu functionality
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.querySelector('.md\\:flex');
+
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // Add mobile menu functionality here if needed
+                    console.log('Mobile menu clicked');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
